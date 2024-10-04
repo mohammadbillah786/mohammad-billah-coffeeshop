@@ -1,0 +1,142 @@
+/*Variables*/
+/*Mixins*/
+/*Global Body Styling*/
+h1,
+h2 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background-color: #fff;
+  margin: 0;
+}
+
+/*Navbar Styling*/
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  background-color: #fff0ed;
+  padding: 1rem;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #393939;
+}
+.navbar li a:hover {
+  color: #5bacc3;
+}
+.navbar__img {
+  position: relative;
+  top: 0.4rem;
+  width: 3.8rem;
+}
+.navbar__links {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-size: 1.3rem;
+  margin-left: auto;
+}
+
+.menuheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/coffee-circle.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+.menuheader img {
+  height: 43.75rem;
+}
+.menuheader h1 {
+  background-color: #393939;
+  color: #fff;
+  padding: 2.5rem;
+  position: absolute;
+}
+.menuheader .menuheader__border {
+  border: #5bacc3 5px solid;
+  width: 15rem;
+  height: 10rem;
+  position: relative;
+  top: -1rem;
+  right: 1rem;
+}
+
+.navbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #393939;
+}
+.navbox .navbox__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  justify-content: center;
+}
+.navbox .navbox__links li {
+  font-size: 1.5rem;
+  width: 11rem;
+  text-align: center;
+  border-left: 5px #5bacc3 solid;
+}
+.navbox .navbox__links li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbox .navbox__links .pastriescontainer {
+  width: 9rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .hot-drinks-section, main .pastries-section {
+  background-color: #fff0ed;
+  width: 100%;
+}
+main .cold-drinks-section {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section h2 {
+  margin-top: 3%;
+}
+main section h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+main section p {
+  width: 40%;
+  margin: 0;
+}
+main section .price {
+  color: #5bacc3;
+  font-weight: 600;
+  padding-bottom: 3%;
+}/*# sourceMappingURL=menu.css.map */

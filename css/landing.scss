@@ -1,0 +1,245 @@
+@use "../partials/global" as *;
+
+/* Hero Banner Styling*/
+.herobanner {
+  @include centered_display();
+  gap: 10%;
+  padding: 1rem;
+  padding-top: 2rem;
+  background: $pink;
+
+  &__left {
+    width: 30%;
+    padding-right: 20%;
+  }
+
+  &__button {
+    @include button();
+    position: relative;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+
+    &--border {
+      @include buttonborder();
+      position: absolute;
+      bottom: 8%;
+      right: 3%;
+      pointer-events: none;
+    }
+  }
+}
+
+.products-section {
+  @include centered_display();
+  flex-direction: column;
+  background-color: $light-gray;
+
+  h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: auto;
+  }
+
+  &__card-container {
+    @include centered_display();
+    flex-direction: row;
+    gap: 5%;
+    padding-top: 3%;
+
+    section {
+      @include cardborder();
+      @include centered_display();
+      flex-direction: column;
+      max-width: 20rem;
+      max-height: 24.5rem;
+      background-color: $white;
+
+      .products-section__image {
+        height: 14rem;
+        padding: 1.4rem;
+      }
+
+      .products-section__sub-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $pink;
+        flex-grow: 1;
+        height: 10%;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        h3 {
+          margin: 0;
+          padding-left: 1.5rem;
+        }
+
+        &--subtitle {
+          font-weight: 300;
+        }
+
+        p {
+          padding-right: 1.5rem;
+          font-size: 3rem;
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  button {
+    @include button;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+
+    .button {
+      @include buttonborder();
+      position: absolute;
+      top: -9%;
+      left: -4%;
+      pointer-events: none;
+    }
+  }
+}
+
+.differentsection {
+  @include centered_display();
+  margin-top: 8%;
+  gap: 5%;
+
+  &__text {
+    width: 30%;
+
+    .differentsection__icons {
+      display: flex;
+      justify-content: space-between;
+
+      .differentsection__img {
+        width: $icon-width;
+      }
+    }
+
+    button {
+      @include button();
+      font-size: 1.3rem;
+      position: relative;
+      margin-top: 10%;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+
+      .button {
+        @include buttonborder();
+        position: absolute;
+        bottom: 8%;
+        right: 3%;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .differentsection__images {
+    max-height: 30rem;
+
+    .differentsection__images-can {
+      position: relative;
+      height: 17.5rem;
+      left: 50%;
+      top: -3rem;
+    }
+
+    .differentsection__images-background {
+      width: 25rem;
+    }
+
+    .differentsection__images-background-border {
+      border: $blue 5px solid;
+      height: 25rem;
+      width: 25rem;
+      position: relative;
+      top: -26.5rem;
+      right: -8rem;
+    }
+  }
+}
+
+.discount-section {
+  display: flex;
+  justify-content: center;
+
+  p {
+    border: $graphite solid;
+    padding: 2rem;
+    font-size: 2.5rem;
+    margin: 10%;
+    background-color: $graphite;
+    color: $white;
+    font-weight: 400;
+
+    .discount-section__text {
+      font-weight: 700;
+    }
+  }
+}
+
+footer {
+  @include centered_display();
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: $pink;
+  overflow: hidden;
+
+  .firstitem {
+    position: relative;
+    bottom: 50%;
+    right: 2%;
+    width: 7.5rem;
+    opacity: 25%;
+  }
+
+  .seconditem {
+    position: relative;
+    width: 7.5rem;
+    bottom: -6rem;
+    right: -2.5rem;
+    opacity: 25%;
+  }
+
+  section {
+    padding: 5%;
+    font-size: 2rem;
+
+    h3 {
+      margin-bottom: 2%;
+      font-weight: 300;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 3rem;
+    }
+  }
+}
