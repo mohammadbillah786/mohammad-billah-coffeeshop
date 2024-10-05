@@ -251,11 +251,16 @@
     background-color: $graphite;
     color: $white;
     font-weight: 400;
+    position: relative;
 
     .discount-section__text {
       font-weight: 700;
     }
   }
+}
+
+.discount-section > p {
+  animation: change-color 2.5s infinite linear;
 }
 
 footer {

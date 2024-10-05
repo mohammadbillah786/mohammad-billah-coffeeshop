@@ -17,6 +17,20 @@ $icon-width: 3.8rem;
   }
 }
 
+@keyframes change-color {
+  0% {
+    background-color: $graphite;
+  }
+
+  50% {
+    background-color: $blue;
+  }
+
+  100% {
+    background-color: $graphite
+  }
+}
+
 /*Mixins*/
 @mixin centered_display {
   display: flex;
