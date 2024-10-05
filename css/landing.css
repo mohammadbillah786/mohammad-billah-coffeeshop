@@ -82,9 +82,28 @@ body {
   position: absolute;
   bottom: 8%;
   right: 3%;
-  pointer-events: none;
 }
 
+/* Herobanner button animation */
+.herobanner__button--border {
+  transform: translateX(0) translateY(0);
+  transition: transform;
+}
+
+.herobanner__button--border:active {
+  transform: translateX(6px) translateY(6px);
+}
+
+.herobanner__button {
+  transform: translateX(0) translateY(0);
+  transition: transform;
+}
+
+.herobanner__button:active {
+  transform: translateX(5px) translateY(5px);
+}
+
+/*Products section layout*/
 .products-section {
   display: flex;
   align-items: center;
@@ -174,7 +193,24 @@ body {
   position: absolute;
   top: -9%;
   left: -4%;
-  pointer-events: none;
+}
+
+.button {
+  transform: translateX(0) translateY(0);
+  transition: transform;
+}
+
+.button:active {
+  transform: translateX(6px) translateY(6px);
+}
+
+.view-all-button {
+  transform: translateX(0) translateY(0);
+  transition: transform;
+}
+
+.view-all-button:active {
+  transform: translateX(5px) translateY(5px);
 }
 
 .differentsection {
@@ -217,7 +253,6 @@ body {
   position: absolute;
   bottom: 8%;
   right: 3%;
-  pointer-events: none;
 }
 .differentsection .differentsection__images {
   max-height: 30rem;
@@ -238,6 +273,15 @@ body {
   position: relative;
   top: -26.5rem;
   right: -8rem;
+}
+
+.learn-more-button {
+  transform: translateX(0) translateY(0);
+  transition: transform;
+}
+
+.learn-more-button:active {
+  transform: translateX(6px) translateY(6px);
 }
 
 .discount-section {
