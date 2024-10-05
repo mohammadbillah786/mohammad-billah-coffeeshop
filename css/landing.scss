@@ -52,7 +52,6 @@
 }
 
 /*Products section layout*/
-
 .products-section {
   @include centered_display();
   flex-direction: column;
@@ -138,6 +137,7 @@
   }
 }
 
+/*Products section button animation styling */
 .button {
   transform: translateX(0) translateY(0);
   transition: transform;
@@ -156,6 +156,7 @@
   transform: translateX(5px) translateY(5px);
 }
 
+/*"We're different" section styling*/
 .differentsection {
   @include centered_display();
   margin-top: 8%;
@@ -220,6 +221,7 @@
   }
 }
 
+/* We're different section button animation styling */
 .learn-more-button {
   transform: translateX(0) translateY(0);
   transition: transform;
@@ -237,8 +239,7 @@
   animation: spin 2s linear infinite;
 }
 
-
-
+/*Discount section styling*/
 .discount-section {
   display: flex;
   justify-content: center;
@@ -259,10 +260,12 @@
   }
 }
 
+/*Discount section animation styling*/
 .discount-section > p {
   animation: change-color 2.5s infinite linear;
 }
 
+/*Footer section styling*/
 footer {
   @include centered_display();
   justify-content: space-between;

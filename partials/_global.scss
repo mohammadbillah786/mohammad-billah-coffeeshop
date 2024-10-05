@@ -10,10 +10,10 @@ $icon-width: 3.8rem;
 /*Keyframe animations*/
 @keyframes spin {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -27,7 +27,7 @@ $icon-width: 3.8rem;
   }
 
   100% {
-    background-color: $graphite
+    background-color: $graphite;
   }
 }
 
@@ -111,6 +111,5 @@ body {
     list-style-type: none;
     font-size: 1.3rem;
     margin-left: auto;
-    
   }
 }

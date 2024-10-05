@@ -67,6 +67,7 @@ body {
   margin-left: auto;
 }
 
+/*Menu herobanner styling*/
 .menuheader {
   display: flex;
   align-items: center;
@@ -94,6 +95,7 @@ body {
   right: 1rem;
 }
 
+/*Navbox underneath menu styling*/
 .navbox {
   display: flex;
   align-items: center;
@@ -121,6 +123,7 @@ body {
   width: 9rem;
 }
 
+/*Body of page styling*/
 main {
   display: flex;
   align-items: center;
@@ -128,7 +131,8 @@ main {
   flex-direction: column;
   text-align: center;
 }
-main .hot-drinks-section, main .pastries-section {
+main .hot-drinks-section,
+main .pastries-section {
   background-color: #fff0ed;
   width: 100%;
 }

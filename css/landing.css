@@ -215,6 +215,7 @@ body {
   left: -4%;
 }
 
+/*Products section button animation styling */
 .button {
   transform: translateX(0) translateY(0);
   transition: transform;
@@ -233,6 +234,7 @@ body {
   transform: translateX(5px) translateY(5px);
 }
 
+/*"We're different" section styling*/
 .differentsection {
   display: flex;
   align-items: center;
@@ -296,6 +298,7 @@ body {
   right: -8rem;
 }
 
+/* We're different section button animation styling */
 .learn-more-button {
   transform: translateX(0) translateY(0);
   transition: transform;
@@ -313,6 +316,7 @@ body {
   animation: spin 2s linear infinite;
 }
 
+/*Discount section styling*/
 .discount-section {
   display: flex;
   justify-content: center;
@@ -331,10 +335,12 @@ body {
   font-weight: 700;
 }
 
+/*Discount section animation styling*/
 .discount-section > p {
   animation: change-color 2.5s infinite linear;
 }
 
+/*Footer section styling*/
 footer {
   display: flex;
   align-items: center;

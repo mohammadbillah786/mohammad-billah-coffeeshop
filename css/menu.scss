@@ -1,101 +1,101 @@
-@use '../partials/global' as *;
+@use "../partials/global" as *;
 
+/*Menu herobanner styling*/
 .menuheader {
-    @include centered_display();
-    background-image: url(../assets/coffee-circle.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 40rem;
+  @include centered_display();
+  background-image: url(../assets/coffee-circle.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
 
-    img {
-        height: 43.75rem;
-    }
+  img {
+    height: 43.75rem;
+  }
 
-    h1 {
-        background-color: $graphite;
-        color: $white;
-        padding: 2.5rem;
-        position: absolute;
-        
-    }
-    .menuheader__border {
-        border: $blue 5px solid;
-        width: 15rem;
-        height: 10rem;
-        position: relative;
-        top: -1rem;
-        right: 1rem;
-    }
-}
-
-.navbox {
-    @include centered_display();
+  h1 {
     background-color: $graphite;
-
-    .navbox__links {
-        @include centered_display();
-        list-style-type: none;
-        justify-content: center;
-
-        li {
-            font-size: 1.5rem;
-            width: 11rem;
-            text-align: center;
-            border-left: 5px $blue solid;
-
-            a {
-                text-decoration: none;
-                color: $white;
-            }
-        }
-
-        .pastriescontainer {
-            width: 9rem;
-        }
-    }
+    color: $white;
+    padding: 2.5rem;
+    position: absolute;
+  }
+  .menuheader__border {
+    border: $blue 5px solid;
+    width: 15rem;
+    height: 10rem;
+    position: relative;
+    top: -1rem;
+    right: 1rem;
+  }
 }
 
-main {
+/*Navbox underneath menu styling*/
+.navbox {
+  @include centered_display();
+  background-color: $graphite;
 
+  .navbox__links {
+    @include centered_display();
+    list-style-type: none;
+    justify-content: center;
+
+    li {
+      font-size: 1.5rem;
+      width: 11rem;
+      text-align: center;
+      border-left: 5px $blue solid;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+
+    .pastriescontainer {
+      width: 9rem;
+    }
+  }
+}
+
+/*Body of page styling*/
+main {
+  @include centered_display();
+  flex-direction: column;
+  text-align: center;
+
+  .hot-drinks-section,
+  .pastries-section {
+    background-color: $pink;
+    width: 100%;
+  }
+
+  .cold-drinks-section {
+    background-color: $light-gray;
+    width: 100%;
+  }
+
+  section {
     @include centered_display();
     flex-direction: column;
-    text-align: center;
-
-    .hot-drinks-section, .pastries-section {
-        background-color: $pink;
-        width: 100%;
+    h2 {
+      margin-top: 3%;
     }
 
-    .cold-drinks-section {
-        background-color: $light-gray;
-        width: 100%;
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
-    section {
-        @include centered_display();
-        flex-direction: column;
-        h2 {
-            margin-top: 3%;
-        }
-    
-        h3 {
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 0;
-            padding-bottom:0;
-        }
-    
-        p {
-            width: 40%;
-            margin: 0;
-    
-        }
-
-        .price {
-            color: $blue;
-            font-weight: 600;
-            padding-bottom: 3%;
-        }
-
+    p {
+      width: 40%;
+      margin: 0;
     }
+
+    .price {
+      color: $blue;
+      font-weight: 600;
+      padding-bottom: 3%;
+    }
+  }
 }
