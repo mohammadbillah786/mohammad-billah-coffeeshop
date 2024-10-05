@@ -202,6 +202,7 @@
       height: 17.5rem;
       left: 50%;
       top: -3rem;
+      z-index: 10;
     }
 
     .differentsection__images-background {
@@ -227,6 +228,15 @@
 .learn-more-button:active {
   transform: translateX(6px) translateY(6px);
 }
+
+.differentsection__images-can {
+  transition: transform 2s linear;
+}
+
+.differentsection__images-can:hover {
+  animation: spin 2s linear infinite;
+}
+
 
 
 .discount-section {

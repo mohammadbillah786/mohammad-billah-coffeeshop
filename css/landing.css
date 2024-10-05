@@ -1,4 +1,13 @@
 /*Variables*/
+/*Keyframe animations*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*Mixins*/
 /*Global Body Styling*/
 h1,
@@ -262,6 +271,7 @@ body {
   height: 17.5rem;
   left: 50%;
   top: -3rem;
+  z-index: 10;
 }
 .differentsection .differentsection__images .differentsection__images-background {
   width: 25rem;
@@ -282,6 +292,14 @@ body {
 
 .learn-more-button:active {
   transform: translateX(6px) translateY(6px);
+}
+
+.differentsection__images-can {
+  transition: transform 2s linear;
+}
+
+.differentsection__images-can:hover {
+  animation: spin 2s linear infinite;
 }
 
 .discount-section {
